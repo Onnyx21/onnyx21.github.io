@@ -1,0 +1,285 @@
+/* Polices externes Google */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37; /* Doré élégant */
+}
+
+.cta a {
+    background-color: #d4af37;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.cta a:hover {
+    background-color: #b08934; /* Doré plus foncé */
+}
+
+/* SECTION D'ACCUEIL */
+#home {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+    padding-top: 100px; /* Ajout de cet espace pour compenser le header */
+}
+
+#home h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    color:#222;
+}
+
+#home a {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px 30px;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    background-color: #d4af37d9;
+    transition: all 0.3s ease-in-out;
+}
+
+#home a:hover {
+    background-color: #d4af37;
+    border: 1px solid #d4af37;
+}
+
+/* SECTIONS */
+section {
+    padding: 100px 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* SECTION À PROPOS */
+#about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+#about p {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+#about blockquote {
+    font-style: italic;
+    font-size: 1.5em;
+    color: #d4af37;
+    text-align: center;
+}
+
+/* GALERIE */
+#gallery h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* SERVICES */
+#services h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    text-align: center;
+}
+
+.services-list li {
+    list-style: none;
+    font-size: 1.2em;
+    max-width: 250px;
+}
+
+.services-list img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* RÉSERVATION */
+#reservation h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#reservation form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#reservation form label {
+    font-weight: 600;
+}
+
+#reservation form input, 
+#reservation form select, 
+#reservation form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#reservation form button {
+    background-color: #d4af37;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reservation form button:hover {
+    background-color: #b08934;
+}
+
+/* CONTACT */
+#contact {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact .contact-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#contact .contact-info p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #bbb;
+}
